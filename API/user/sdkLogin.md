@@ -50,7 +50,7 @@ json
 
 | 字段    | 类型 | 内容       | 备注                                                         |
 | ------- | ---- | ---------- | ------------------------------------------------------------ |
-| code    | num  | 返回值     | -10000：参数空了<br />-130：验证码错误<br />过期也会提示错误<br />200：成功 |
+| code    | num  | 返回值     | -10000: 参数空了<br />-130: 验证码错误<br />过期也会提示错误<br />200: 成功 |
 | msg     | str  | 提示信息   |                                                              |
 | success | bool | true/false |                                                              |
 | data    | obj  | 详细信息   | 登录成功才有                                                 |
@@ -64,7 +64,7 @@ json
 | headUrl   | str  | 头像图片链接 | https://prod-alicdn-community.kurobbs.com/headCode/RoleHeadTwentyone.png |
 | headCode | str | 头像 ID   | 35 |
 | userName | str | 昵称      |    |
-| userId | str | 账号 ID   |    |
+| userId | str | 账号 ID   | 10065669 |
 | isRegister | str | 早期的注册用户 | 非早期注册用户 0 |
 | isOfficial | str | (?)   | 我是 0 |
 | status | str | (?)   | 我是 0 |

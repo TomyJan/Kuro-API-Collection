@@ -8,8 +8,9 @@
 ### [用户](/API/user)
 
 - [发送验证码](#) (暂未)
-- [验证码登录(APP 端)](/API/user/sdkLogin.md)
-- [验证码登录(Web 端)](/API/user/sdkLoginForH5.md)
+- [验证码登录 APP 端](/API/user/sdkLogin.md)
+- [验证码登录 Web 端](/API/user/sdkLoginForH5.md)
+- [取个人信息 V2](/API/user/mineV2.md)
 
 ## 相关项目
 - [Yunzai-Kuro-Plugin](https://github.com/TomyJan/Yunzai-Kuro-Plugin) Yunzai-Bot 插件
