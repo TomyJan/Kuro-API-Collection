@@ -1,3 +1,8 @@
 # 验证码登录 Web 端
 
-同 [验证码登录 APP 端](/tree/master/api/user/sdkLogin.md)
+## 请求地址
+
+> https://api.kurobbs.com/user/sdkLogin
+
+其它 同 [验证码登录 APP 端](/api/user/sdkLogin.md)
+

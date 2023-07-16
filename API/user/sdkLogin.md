@@ -2,7 +2,7 @@
 
 ## 请求地址
 
-> https://api.bilibili.com/x/vip/privilege/my
+> https://api.kurobbs.com/user/sdkLogin
 
 ## 请求方式
 POST
