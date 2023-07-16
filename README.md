@@ -1,0 +1,16 @@
+# Kuro-API-Collection
+
+库街区 API 收集
+
+目前只收集了项目需要用到的 API, 算是挖坑吧
+
+## 目录
+### [用户](/tree/master/api/user)
+
+- [发送验证码](#) (暂未)
+- [验证码登录(APP 端)](/tree/master/api/user/sdkLogin.md)
+- [验证码登录(Web 端)](/tree/master/api/user/sdkLoginForH5.md)
+
+## 相关项目
+- [Yunzai-Kuro-Plugin](https://github.com/TomyJan/Yunzai-Kuro-Plugin) Yunzai-Bot 插件
+
