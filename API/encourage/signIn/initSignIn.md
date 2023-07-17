@@ -89,26 +89,25 @@ json
 const url = 'https://api.kurobbs.com/encourage/signIn/initSignIn'
 const headers = {
     pragma: 'no-cache',
-    cache-control: 'no-cache',
+    'cache-control': 'no-cache',
     accept: 'application/json, text/plain, */*',
     source: 'android',
-    user-agent: 'Mozilla/5.0 (Linux; Android 13; 2211133C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.131 Mobile Safari/537.36 Kuro/1.0.9 KuroGameBox/1.0.9',
+    'user-agent': 'Mozilla/5.0 (Linux; Android 13; 2211133C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.131 Mobile Safari/537.36 Kuro/1.0.9 KuroGameBox/1.0.9',
     token: 'eyJhbGciOiJIUzI1NiJ9.eyJjcmVhdGVkIjoxNjg5NDk4MDkxMjQ1LCJ1c2VySWQiOjEwMDY1NjY5fQ.AAAA_AAAAAAAAAAAAAAAAAAAAAAAAAAA-AAAAAAAAAA',
-    content-type: 'application/x-www-form-urlencoded',
+    'content-type': 'application/x-www-form-urlencoded',
     origin: 'https://web-static.kurobbs.com',
-    x-requested-with: 'com.kurogame.kjq',
-    sec-fetch-site: 'same-site',
-    sec-fetch-mode: 'cors',
-    sec-fetch-dest: 'empty',
-    accept-encoding: 'gzip, deflate, br',
-    accept-language: 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+    'x-requested-with': 'com.kurogame.kjq',
+    'sec-fetch-site': 'same-site',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-dest': 'empty',
+    'accept-encoding': 'gzip, deflate, br',
+    'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
 }
 
 const formData = new URLSearchParams()
 formData.append('gameId', 2)
 formData.append('serverId', 1000)
 formData.append('roleId', 46218962)
-logger.info(formData)
 try {
     const response = await fetch(url, {
         method: 'POST',
