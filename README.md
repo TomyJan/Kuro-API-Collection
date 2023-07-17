@@ -21,6 +21,7 @@
 ### [奖励](/API/encourage)
 
 - [取游戏签到信息 (需带游戏 UID)](/API/encourage/signIn/initSignIn.md)
+- [游戏签到](/API/encourage/signIn.md)
 
 ## 相关项目
 - [Yunzai-Kuro-Plugin](https://github.com/TomyJan/Yunzai-Kuro-Plugin) Yunzai-Bot 插件
