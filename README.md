@@ -12,6 +12,10 @@
 - [验证码登录 Web 端](/API/user/sdkLoginForH5.md)
 - [取个人信息 V2](/API/user/mineV2.md)
 
+### [奖励](/API/encourage)
+
+- [取游戏签到信息 (需带游戏 UID)](/API/encourage/signIn/initSignIn.md)
+
 ## 相关项目
 - [Yunzai-Kuro-Plugin](https://github.com/TomyJan/Yunzai-Kuro-Plugin) Yunzai-Bot 插件
 
