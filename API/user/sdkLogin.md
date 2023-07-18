@@ -1,5 +1,11 @@
 # 验证码登录 APP 端
 
+注意, APP 端只能同时有一个登录, 也就是获取下一个 token 后前一个 token 就会失效
+
+且获取的 APP 端的 token 不可用于 Web 端的接口
+
+所以推荐通过抓包来让 APP 和 其他自动化业务使用同一个 token 
+
 ## 请求地址
 
 > https://api.kurobbs.com/user/sdkLogin
@@ -35,7 +41,7 @@ null
 
 | 字段     | 类型 | 内容   | 备注                             |
 | -------- | ---- | ------ | -------------------------------- |
-| code     | num  | 验证码 |                                  |
+| code     | num  | 验证码 | APP 端与 Web 端通用              |
 | devcode  | str  | -      | 2fba3859fe9bfe9099f2696b8648c2c6 |
 | gameList | unk  | -      | null                             |
 | mobile   | num  | 手机号 |                                  |
