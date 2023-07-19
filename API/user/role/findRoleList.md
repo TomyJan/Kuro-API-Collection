@@ -47,7 +47,7 @@ json
 | ------- | ---- | -------- | ------------------------------ |
 | code    | num  | 返回值   | 220: token 失效<br />200: 成功 |
 | msg     | str  | 提示信息 |                                |
-| success | bool | true     | 成功时才有                     |
+| success | bool | true     | token 有效时才有               |
 | data    | arr  | 详细信息 | 成功时才有                     |
 
 ### `data`成员对象
@@ -90,7 +90,6 @@ const headers = {
 
 const formData = new URLSearchParams()
 formData.append('gameId', 2)
-logger.info(formData)
 try {
     const response = await fetch(url, {
         method: 'POST',

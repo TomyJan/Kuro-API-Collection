@@ -103,7 +103,6 @@ formData.append('code', 114514)
 formData.append('devCode', '2fba3859fe9bfe9099f2696b8648c2c6')
 formData.append('gameList', '')
 formData.append('mobile', 18888888888)
-logger.info(formData)
 try {
     const response = await fetch(url, {
         method: 'POST',

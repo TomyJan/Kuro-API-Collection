@@ -44,13 +44,11 @@ token
 
 json
 
-### 根对象
-
 | 字段    | 类型 | 内容       | 备注                                                         |
 | ------- | ---- | ---------- | ------------------------------------------------------------ |
 | code    | num  | 返回值     | 1511: 重复签到<br />1505: 活动过期(非当前月份)<br />220: cookie过期<br />200: 成功 |
 | msg     | str  | 提示信息   | 请求成功/请勿重复签到/用户登录已过期/签到失败, 请刷新页面后重试 |
-| success | bool | true/false | cookie有效才有                                               |
+| success | bool | true/false | token 有效时才有                                             |
 | data    | str  | 详细信息   | 签到完成, 成功时才有                                         |
 
 ## 示例
@@ -81,7 +79,6 @@ formData.append('gameId', 2)
 formData.append('serverId', 1000)
 formData.append('roleId', 46218962)
 formData.append('reqMonth', '07')
-logger.info(formData)
 try {
     const response = await fetch(url, {
         method: 'POST',

@@ -4,6 +4,8 @@
 
 目前只收集了项目需要用到的 API, 算是挖坑吧
 
+目前所整理 API, 除非特别说明, 全部为 APP 端
+
 ## 目录
 
 ### [用户](/API/user)
@@ -23,6 +25,11 @@
 - [取游戏签到信息 (需带游戏 UID)](/API/encourage/signIn/initSignIn.md)
 - [游戏签到](/API/encourage/signIn.md)
 
+### [论坛](/API/forum)
+
+- [图片上传](/API/forum/uploadForumImg.md)
+
 ## 相关项目
+
 - [Yunzai-Kuro-Plugin](https://github.com/TomyJan/Yunzai-Kuro-Plugin) Yunzai-Bot 插件
 
