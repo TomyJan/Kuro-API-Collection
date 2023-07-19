@@ -15,6 +15,7 @@
 - [验证码登录 Web 端](/API/user/sdkLoginForH5.md)
 - [取个人信息 V2](/API/user/mineV2.md)
 - [取绑定游戏账号列表](/API/user/role/findRoleList.md)
+- [更新头像链接](/API/user/updateHeadUrl.md)
 
 ### [玩家](/API/gamer)
 
