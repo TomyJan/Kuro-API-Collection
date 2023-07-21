@@ -42,7 +42,7 @@ null
 | 字段     | 类型 | 内容   | 备注                             |
 | -------- | ---- | ------ | -------------------------------- |
 | code     | num  | 验证码 | APP 端与 Web 端通用              |
-| devcode  | str  | -      | 2fba3859fe9bfe9099f2696b8648c2c6 |
+| devCode  | str  | -      | 2fba3859fe9bfe9099f2696b8648c2c6 |
 | gameList | unk  | -      | null                             |
 | mobile   | num  | 手机号 |                                  |
 
