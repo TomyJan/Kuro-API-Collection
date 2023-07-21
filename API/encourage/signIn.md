@@ -17,10 +17,11 @@ token
 | ---------------- | ---- | ----- | ------------------------------------------------------------ |
 | pragma           | str  | -     | no-cache                                                     |
 | cache-control    | str  | -     | no-cache                                                     |
-| accept           | str  | -     | application/json, text/plain, \*/\*                            |
+| accept           | str  | -     | application/json, text/plain, \*/\*                          |
 | source           | str  | -     | android                                                      |
 | user-agent       | str  | UA    | Mozilla/5.0 (Linux; Android 13; 2211133C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.131 Mobile Safari/537.36 Kuro/1.0.9 KuroGameBox/1.0.9 |
 | token            | str  | token | eyJhbGciOiJIUzI1NiJ9.eyJjcmVhdGVkIjoxNjg5NDk4MDkxMjQ1LCJ1c2VySWQiOjEwMDY1NjY5fQ.AAAA_AAAAAAAAAAAAAAAAAAAAAAAAAAA-AAAAAAAAAA |
+| content-type     | str  |       | application/x-www-form-urlencoded                            |
 | origin           | str  |       | https://web-static.kurobbs.com                               |
 | x-requested-with | str  |       | com.kurogame.kjq                                             |
 | sec-fetch-site   | str  |       | same-site                                                    |

@@ -5,6 +5,7 @@
 > https://api.kurobbs.com/encourage/signIn/initSignIn
 
 ## 请求方式
+
 POST
 
 ## 认证方式
