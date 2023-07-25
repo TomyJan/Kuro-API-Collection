@@ -73,8 +73,8 @@ json
 | ------------ | ---- | -------------------- | ---------------------- |
 | browseCount  | str  | 浏览量               | 6                      |
 | commentCount | num  | 评论数               | 2                      |
-| gameForumId  | num  | 板块 id              | 见 [请求体](## 请求体) |
-| gameId       | num  | 游戏 id              | 见 [请求体](## 请求体) |
+| gameForumId  | num  | 板块 id              | 见 [请求体](#请求体) |
+| gameId       | num  | 游戏 id              | 见 [请求体](#请求体) |
 | gameName     | str  | 游戏名称             | 战双帕弥什             |
 | identifyClassify | num  | 身份认证的类型    | 没认证的没这个键, 1=蓝色星星, 2=黄色V |
 | identifyNames | str  | 身份认证的名称      | 没认证的没这个键, 战双版主/搬砖工一枚，请轻拍！ |

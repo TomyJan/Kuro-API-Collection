@@ -107,7 +107,7 @@ json
 | forumListShowType | num  | (?)      | 1                                                            |
 | forumType         | num  | (?)      | https://prod-alicdn-community.kurobbs.com/forum/1690302277218520029.jpg |
 | forumUiType       | num  | (?)      | 1728                                                         |
-| id                | num  | 板块 id  | 3, 见 [`postDetail` 对象](### `postDetail` 对象)             |
+| id                | num  | 板块 id  | 3, 见 [`postDetail` 对象](#postDetail-对象)                  |
 | isOfficial        | num  | (?)      | 0                                                            |
 | isSpecial         | num  | (?)      | 0                                                            |
 | name              | str  | 板块名称 | 伊甸闲庭                                                     |
@@ -149,7 +149,7 @@ json
 
 | 字段            | 类型 | 内容               | 备注                                                         |
 | --------------- | ---- | ------------------ | ------------------------------------------------------------ |
-| commentContent | arr | 评论内容数组            | 见[`postDetail` 中的 `postContent` 成员对象](### `postDetail` 中的 `postContent` 成员对象) |
+| commentContent | arr | 评论内容数组            | 见[`postDetail` 中的 `postContent` 成员对象](#-postDetail-中的-postContent-成员对象) |
 | commentId | str | 评论 id             | 1133555624024195072                                     |
 | commentTime | str | 人类易读的评论时间       | 刚刚/3分钟前/07-25                                           |
 | floor  | num | 楼层                | 1                                                        |
