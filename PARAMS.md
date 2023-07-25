@@ -26,7 +26,7 @@
 
 ### 特殊请求头
 
-- [图片上传](/API/forum/uploadForumImg.md) / [取个人信息 V2](typora://app/API/user/mineV2.md) / [更新头像链接](typora://app/API/user/updateHeadUrl.md) / [验证码登录 APP 端](/API/user/sdkLogin.md) 
+- [图片上传](/API/forum/uploadForumImg.md) / [取个人信息 V2](/API/user/mineV2.md) / [更新头像链接](/API/user/updateHeadUrl.md) / [验证码登录 APP 端](/API/user/sdkLogin.md) / [是否社区签到](/API/user/haveSignIn.md)
 
 distinct_id: 765485e7-30ce-4496-9a9c-a2ac1c03c02c
 
@@ -55,4 +55,4 @@ content-type: application/x-www-form-urlencoded; charset=utf-8
 | code    | num         | 返回值     | 220: cookie过期<br />200: 成功<br />其它则为具体业务特定的 code |
 | msg     | str         | 提示信息   | 请求成功//用户登录已过期/…                                   |
 | success | bool        | true/false | token 有效时才有                                             |
-| data    | str/arr/pbj | 详细信息   | 请求成功时才有                                               |
+| data    | str/arr/obj | 详细信息   | 请求成功时才有                                               |

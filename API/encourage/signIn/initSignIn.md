@@ -67,8 +67,8 @@ json
 | redirectText | str | (?)   | 任务中心 |
 | redirectType | num | (?)   | 2 |
 | repleNum | num | (?)   | 0 |
-| sigIn | bool | 今天是否已签到 | true |
-| sigInNum | num | 签到天数 | 3 |
+| sigIn | bool | 今天是否已签到 | true, 注意这个字段单词拼写是错误的 |
+| sigInNum | num | 签到天数 | 3, 注意这个字段单词拼写是错误的 |
 | signInGoodsConfigs | arr | 签到奖励物品数组 |  |
 
 ### `signInGoodsConfigs`成员对象

@@ -12,12 +12,13 @@ API 请求头大致相同, 具体请见 [参数总结](/PARAMS.md)
 
 ### [用户](/API/user)
 
-- [发送验证码](#) (暂未)
+- [发送验证码](#) (麻烦还要极验)
 - [验证码登录 APP 端](/API/user/sdkLogin.md)
 - [验证码登录 Web 端](/API/user/sdkLoginForH5.md)
 - [取个人信息 V2](/API/user/mineV2.md)
 - [取绑定游戏账号列表](/API/user/role/findRoleList.md)
 - [更新头像链接](/API/user/updateHeadUrl.md)
+- [是否社区签到](/API/user/haveSignIn.md)
 
 ### [玩家](/API/gamer)
 
