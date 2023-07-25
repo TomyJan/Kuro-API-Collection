@@ -98,18 +98,18 @@ try {
     })
 
     if (!response.ok) {
-        throw new Error('fetch error: ' + response.status)
+        console.error('fetch error: ', response.status, response.statusText)
     }
 
     const rsp = await response.json()
 
     if (rsp.code === 200) {
-        console.info('fetch rsp:', JSON.stringify(rsp));
+        console.info('api rsp:', JSON.stringify(rsp))
     } else {
-        console.error('fetch error:', JSON.stringify(rsp));
+        console.error('api error:', JSON.stringify(rsp))
     }
 } catch (error) {
-    console.error('fetch error:', error);
+    console.error('fetch error:', error)
 }
 ```
 
