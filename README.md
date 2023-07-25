@@ -33,6 +33,8 @@ API 请求头大致相同, 具体请见 [参数总结](/PARAMS.md)
 ### [论坛](/API/forum)
 
 - [图片上传](/API/forum/uploadForumImg.md)
+- [取帖子列表](/API/forum/list.md)
+- [取帖子详情](/API/forum/getPostDetail.md)
 
 ## 相关项目
 
