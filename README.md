@@ -19,6 +19,7 @@ API 请求头大致相同, 具体请见 [参数总结](/PARAMS.md)
 - [取绑定游戏账号列表](/API/user/role/findRoleList.md)
 - [更新头像链接](/API/user/updateHeadUrl.md)
 - [是否社区签到](/API/user/haveSignIn.md)
+- [社区签到](/API/user/signIn.md)
 
 ### [玩家](/API/gamer)
 

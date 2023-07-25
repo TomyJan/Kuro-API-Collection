@@ -26,7 +26,7 @@
 
 ### 特殊请求头
 
-- [图片上传](/API/forum/uploadForumImg.md) / [取个人信息 V2](/API/user/mineV2.md) / [更新头像链接](/API/user/updateHeadUrl.md) / [验证码登录 APP 端](/API/user/sdkLogin.md) / [是否社区签到](/API/user/haveSignIn.md)
+- [图片上传](/API/forum/uploadForumImg.md) / [取个人信息 V2](/API/user/mineV2.md) / [更新头像链接](/API/user/updateHeadUrl.md) / [验证码登录 APP 端](/API/user/sdkLogin.md) / [是否社区签到](/API/user/haveSignIn.md) / [社区签到](/API/user/signIn.md) 
 
 distinct_id: 765485e7-30ce-4496-9a9c-a2ac1c03c02c
 
