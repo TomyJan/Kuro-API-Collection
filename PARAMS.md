@@ -4,31 +4,32 @@
 
 ## 请求头
 
-目前 encourage 下的两个 API 请求头和其他不一样, 类似浏览器环境, 其他 API 大差不差
+目前 [取游戏签到信息](typora://app/API/encourage/signIn/initSignIn.md) | [游戏签到](typora://app/API/encourage/signIn.md) 请求头和其他不一样, 类似浏览器环境, 可以前往查看, 其他 API 大差不差
 
 ### 共有请求头
 
-| 字段            | 类型 | 内容  | 备注                              |
-| --------------- | ---- | ----- | --------------------------------- |
-| osversion       | str  | -     | Android                           |
-| devcode         | str  | -     | 2fba3859fe9bfe9099f2696b8648c2c6  |
-| countrycode     | str  | -     | CN                                |
-| ip              | str  |       | 10.0.2.233                        |
-| model           | str  |       | 2211133C                          |
-| source          | str  |       | android                           |
-| lang            | str  |       | zh-Hans                           |
-| version         | str  |       | 1.0.9                             |
-| versioncode     | str  |       | 1090                              |
-| token           | str  | token |                                   |
-| content-type    | str  |       | application/x-www-form-urlencoded |
-| accept-encoding | str  |       | gzip                              |
-| user-agent      | str  |       | okhttp/3.10.0                     |
+| 字段            | 类型 | 内容  | 备注                                 |
+| --------------- | ---- | ----- | ------------------------------------ |
+| osversion       | str  | -     | Android                              |
+| devcode         | str  | -     | 2fba3859fe9bfe9099f2696b8648c2c6     |
+| distinct_id     | str  | -     | 765485e7-30ce-4496-9a9c-a2ac1c03c02c |
+| countrycode     | str  | -     | CN                                   |
+| ip              | str  |       | 10.0.2.233                           |
+| model           | str  |       | 2211133C                             |
+| source          | str  |       | android                              |
+| lang            | str  |       | zh-Hans                              |
+| version         | str  |       | 1.0.9                                |
+| versioncode     | str  |       | 1090                                 |
+| token           | str  | token |                                      |
+| content-type    | str  |       | application/x-www-form-urlencoded    |
+| accept-encoding | str  |       | gzip                                 |
+| user-agent      | str  |       | okhttp/3.10.0                        |
 
 ### 特殊请求头
 
-- [图片上传](/API/forum/uploadForumImg.md) / [取个人信息 V2](/API/user/mineV2.md) / [更新头像链接](/API/user/updateHeadUrl.md) / [验证码登录 APP 端](/API/user/sdkLogin.md) / [是否社区签到](/API/user/haveSignIn.md) / [社区签到](/API/user/signIn.md) / [取帖子列表](/API/forum/list.md) / [取帖子详情](/API/forum/getPostDetail.md) 
+- [取账号绑定的游戏账号信息](/API/gamer/role/list.md) / [取绑定游戏账号列表](/API/user/role/findRoleList.md) 
 
-distinct_id: 765485e7-30ce-4496-9a9c-a2ac1c03c02c
+这些接口不需要 `distinct_id` 
 
 - [图片上传](/API/forum/uploadForumImg.md) 
 

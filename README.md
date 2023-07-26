@@ -27,14 +27,16 @@ API 请求头大致相同, 具体请见 [参数总结](/PARAMS.md)
 
 ### [奖励](/API/encourage)
 
-- [取游戏签到信息 (需带游戏 UID)](/API/encourage/signIn/initSignIn.md)
+- [取游戏签到信息](/API/encourage/signIn/initSignIn.md)
 - [游戏签到](/API/encourage/signIn.md)
+- [社区分享任务](/API/encourage/level/shareTask.md)
 
 ### [论坛](/API/forum)
 
 - [图片上传](/API/forum/uploadForumImg.md)
 - [取帖子列表](/API/forum/list.md)
 - [取帖子详情](/API/forum/getPostDetail.md)
+- [通用论坛点赞](/API/forum/like.md)
 
 ## 相关项目
 

@@ -88,7 +88,7 @@ json
 | isTop           | num  | (?)                | 0                                                            |
 | likeCount       | num  | 点赞数             | 0                                                            |
 | postContent     | arr  | 帖子内容数组       | 每段内容一个成员                                             |
-| postH5Content   | str  | 帖子 H5 格式的内容 | 下面的示例有几乎所有的类型                                   |
+| postH5Content   | str  | 帖子 H5 格式的内容 | 下面的 [响应示例](#响应) 有几乎所有的类型                    |
 | postTime        | str  | 人类易读的发帖时间 | 刚刚/3分钟前/07-25                                           |
 | postTitle       | str  | 帖子标题           | 测试标题                                                     |
 | postType        | num  | (?)                | 1                                                            |
