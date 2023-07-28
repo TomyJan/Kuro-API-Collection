@@ -35,7 +35,7 @@
 
 content-type: multipart/form-data; boundary=48dc8243-9106-4152-b8d7-27a3aa6cdddd (随机生成)
 
-- [取账号绑定的游戏账号信息](/API/gamer/role/list.md) / [取绑定游戏账号列表](/API/user/role/findRoleList.md)
+- [取账号绑定的游戏账号信息](/API/gamer/role/list.md) / [取绑定游戏账号列表](/API/user/role/findRoleList.md) / [取库洛币总数](/API/encourage/gold/getTotalGold.md)
 
 content-type: application/x-www-form-urlencoded; charset=utf-8
 

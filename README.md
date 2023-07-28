@@ -31,6 +31,7 @@ API 请求头大致相同, 具体请见 [参数总结](/PARAMS.md)
 - [游戏签到](/API/encourage/signIn.md)
 - [社区分享任务](/API/encourage/level/shareTask.md)
 - [取任务进度](/API/encourage/level/getTaskProcess.md)
+- [取库洛币总数](/API/encourage/gold/getTotalGold.md)
 
 ### [论坛](/API/forum)
 

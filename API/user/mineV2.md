@@ -73,6 +73,8 @@ json
 | isFollow | num | (?)   | 0 |
 | isLoginUser | num | (?) | 1 |
 | isMute | num | (?) | 0 |
+| lastLoginModelType | str | 最后登录设备型号 | 2211133C |
+| lastLoginTime | str | 最后登录时间 | 2023-07-27 01:10:51 |
 | levelTotal | num | (?) | 0 |
 | likeCount | num | (?) | 0 |
 | medalList | arr | (?) | 空的 |
@@ -137,41 +139,37 @@ try {
 
 ```json
 {
-  code: 200,
-  data: {
-    gender: 3,
-    signature: '这个人很懒，还没有签名。',
-    headUrl: '{
-    "code": 200,
-    "data": {
-        "mine": {
-            "collectCount": 0,
-            "commentCount": 0,
-            "fansCount": 0,
-            "fansNewCount": 0,
-            "followCount": 0,
-            "gender": 3,
-            "goldNum": 0,
-            "headUrl": "https://prod-alicdn-community.kurobbs.com/headCode/RoleHeadLuolannew.png",
-            "ifCompleteQuiz": 1,
-            "isFollow": 0,
-            "isLoginUser": 1,
-            "isMute": 0,
-            "levelTotal": 0,
-            "likeCount": 0,
-            "medalList": [
-            ],
-            "mobile": "188****8888",
-            "postCount": 0,
-            "registerTime": "2023.07.16",
-            "signature": "这个人很懒，还没有签名。",
-            "signatureReviewStatus": 1,
-            "status": 0,
-            "userId": "10065669",
-            "userName": "TomyJan"
-        }
-    },
-    "msg": "请求成功",
-    "success": true
+  "code": 200,
+  "data": {
+    "mine": {
+      "collectCount": 0,
+      "commentCount": 13,
+      "fansCount": 0,
+      "fansNewCount": 0,
+      "followCount": 1,
+      "gender": 3,
+      "goldNum": 690,
+      "headUrl": "https://prod-alicdn-community.kurobbs.com/headCode/RoleHeadTwentyone.png",
+      "ifCompleteQuiz": 1,
+      "isFollow": 0,
+      "isLoginUser": 1,
+      "isMute": 0,
+      "lastLoginModelType": "2211133C",
+      "lastLoginTime": "2023-07-27 01:10:51",
+      "levelTotal": 0,
+      "likeCount": 20,
+      "medalList": [],
+      "mobile": "188****8888",
+      "postCount": 1,
+      "registerTime": "2023.03.23",
+      "signature": "这个人很懒，还没有签名。",
+      "signatureReviewStatus": 1,
+      "status": 0,
+      "userId": "10065669",
+      "userName": "TomyJan"
+    }
+  },
+  "msg": "请求成功",
+  "success": true
 }
 ```
