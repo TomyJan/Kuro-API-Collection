@@ -4,7 +4,7 @@
 
 ## 请求头
 
-目前 [取游戏签到信息](typora://app/API/encourage/signIn/initSignIn.md) | [游戏签到](typora://app/API/encourage/signIn.md) 请求头和其他不一样, 类似浏览器环境, 可以前往查看, 其他 API 大差不差
+目前 [取游戏签到信息](/API/encourage/signIn/initSignIn.md) | [游戏签到](/API/encourage/signIn.md) 和 `/activity` 路由下的请求头和其他不一样, 类似浏览器环境, 可以前往查看, 其他 API 大差不差
 
 ### 共有请求头
 
@@ -57,3 +57,5 @@ content-type: application/x-www-form-urlencoded; charset=utf-8
 | msg     | str         | 提示信息   | 请求成功//用户登录已过期/…                                   |
 | success | bool        | true/false | token 有效时才有                                             |
 | data    | str/arr/obj | 详细信息   | 请求成功时才有                                               |
+
+注意 `activity` 路由下的请求没有 `success`, 多了一个 `message`, 目前看来其值与 `msg` 相同

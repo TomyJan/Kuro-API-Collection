@@ -40,6 +40,13 @@ API 请求头大致相同, 具体请见 [参数总结](/PARAMS.md)
 - [取帖子详情](/API/forum/getPostDetail.md)
 - [通用论坛点赞](/API/forum/like.md)
 
+### [活动](/API/activity)
+
+- [取活动绑定游戏角色信息](/API/activity/gamer/role/getBindRoleInfo.md)
+- [取活动任务详情](/API/activity/task/getList.md)
+- [完成活动任务](/API/activity/task/complete.md)
+- [领取活动任务奖励](/API/activity/task/receive.md)
+
 ## 相关项目
 
 - [Yunzai-Kuro-Plugin](https://github.com/TomyJan/Yunzai-Kuro-Plugin) Yunzai-Bot 插件
