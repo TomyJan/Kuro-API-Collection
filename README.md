@@ -44,6 +44,7 @@ API 请求头大致相同, 具体请见 [参数总结](/PARAMS.md)
 ### [活动](/API/activity)
 
 - [取活动绑定游戏角色信息](/API/activity/gamer/role/getBindRoleInfo.md)
+- [活动绑定游戏角色](/API/activity/gamer/role/bindRole.md)
 - [取活动任务详情](/API/activity/task/getList.md)
 - [完成活动任务](/API/activity/task/complete.md)
 - [领取活动任务奖励](/API/activity/task/receive.md)
