@@ -1,5 +1,7 @@
 # 更新头像链接
 
+更新时间: unrecorded
+
 ## 请求地址
 
 > https://api.kurobbs.com/user/updateHeadUrl

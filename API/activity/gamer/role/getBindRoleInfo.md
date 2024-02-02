@@ -1,5 +1,7 @@
 # 取活动绑定游戏角色信息
 
+更新时间: unrecorded
+
 ## 请求地址
 
 > https://api.kurobbs.com/activity/gamer/role/getBindRoleInfo

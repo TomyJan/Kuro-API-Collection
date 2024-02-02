@@ -1,5 +1,7 @@
 # 取个人信息 V2
 
+更新时间: unrecorded
+
 ## 请求地址
 
 > https://api.kurobbs.com/user/mineV2

@@ -1,5 +1,7 @@
 # 验证码登录 Web 端
 
+更新时间: unrecorded
+
 ## 请求地址
 
 > https://api.kurobbs.com/user/sdkLoginForH5

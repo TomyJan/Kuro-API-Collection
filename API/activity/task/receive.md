@@ -1,5 +1,7 @@
 # 领取活动任务奖励
 
+更新时间: unrecorded
+
 ## 请求地址
 
 > https://api.kurobbs.com/activity/task/receive

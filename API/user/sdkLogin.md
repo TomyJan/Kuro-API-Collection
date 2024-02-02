@@ -1,5 +1,7 @@
 # 验证码登录 APP 端
 
+更新时间: unrecorded
+
 注意, APP 端只能同时有一个登录, 也就是获取下一个 token 后前一个 token 就会失效
 
 且获取的 APP 端的 token 不可用于 Web 端的接口

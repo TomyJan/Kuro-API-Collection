@@ -1,5 +1,7 @@
 # 取绑定游戏账号列表
 
+更新时间: unrecorded
+
 ## 请求地址
 
 > https://api.kurobbs.com/user/role/findRoleList

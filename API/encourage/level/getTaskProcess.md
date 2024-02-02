@@ -1,5 +1,7 @@
 # 取任务进度
 
+更新时间: unrecorded
+
 ## 请求地址
 
 > https://api.kurobbs.com/encourage/level/getTaskProcess

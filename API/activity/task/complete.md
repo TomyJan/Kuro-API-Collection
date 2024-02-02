@@ -1,5 +1,7 @@
 # 完成活动任务
 
+更新时间: unrecorded
+
 ## 请求地址
 
 > https://api.kurobbs.com/activity/task/complete

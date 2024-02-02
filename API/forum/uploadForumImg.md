@@ -1,5 +1,7 @@
 # 图片上传
 
+更新时间: unrecorded
+
 ## 请求地址
 
 > https://api.kurobbs.com/forum/uploadForumImg

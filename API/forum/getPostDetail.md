@@ -1,5 +1,7 @@
 # 取帖子详情
 
+更新时间: unrecorded
+
 ## 请求地址
 
 > https://api.kurobbs.com/forum/getPostDetail

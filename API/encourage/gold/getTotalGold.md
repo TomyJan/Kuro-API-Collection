@@ -1,5 +1,7 @@
 # 取库洛币总数
 
+更新时间: unrecorded
+
 ## 请求地址
 
 > https://api.kurobbs.com/encourage/gold/getTotalGold

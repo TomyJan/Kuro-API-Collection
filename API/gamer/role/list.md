@@ -1,5 +1,7 @@
 # 取账号绑定的游戏账号信息
 
+更新时间: unrecorded
+
 ## 请求地址
 
 > https://api.kurobbs.com/gamer/role/list
