@@ -28,7 +28,7 @@ API 请求头大致相同, 具体请见 [参数总结](/PARAMS.md)
 
 ### [奖励](/API/encourage)
 
-- [取游戏签到信息](/API/encourage/signIn/initSignIn.md)
+- [取游戏签到信息 V2](/API/encourage/signIn/initSignInV2.md)
 - [游戏签到](/API/encourage/signIn.md)
 - [社区分享任务](/API/encourage/level/shareTask.md)
 - [取任务进度](/API/encourage/level/getTaskProcess.md)
