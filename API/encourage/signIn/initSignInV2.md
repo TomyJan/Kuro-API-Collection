@@ -1,6 +1,6 @@
 # 取游戏签到信息 V2
 
-更新时间: 2024.05.24
+更新时间: 2024.06.02
 
 ## 请求地址
 
@@ -60,21 +60,30 @@ json
 
 | 字段      | 类型 | 内容         | 备注                                                         |
 | --------- | ---- | ------------ | ------------------------------------------------------------ |
+| disposableGoodsList | arr | (?) |  |
+| disposableSignNum | num | (?) | 5 |
 | eventEndTimes | str  | 本期活动结束时间 | 2023-07-31 23:59:59                                         |
 | eventStartTimes | str  | 本期活动开始时间 | 2023-07-01 00:00:00                  |
 | expendGold | num  | (?) | https://prod-alicdn-community.kurobbs.com/headCode/RoleHeadTwentyone.png |
 | expendNum | num | (?) | 3 |
 | isSigIn | bool | 今天是否已签到 | true, 注意这个字段单词拼写是错误的 |
+| loopDescription | str | 限时签到描述 | 无 |
+| loopEndTimes | str | 限时签到结束时间 | 2024-06-10 23:59:59 |
+| loopSignName | str | 限时签到名称 | 限时签到 |
+| loopSignNum | num | 限时签到已签天数 | 2 |
+| loopStartTimes | str | 限时签到开始时间 | 2024-06-01 00:00:00 |
 | nowServerTimes | str | 当前服务器时间 | 2023-07-16 17:41:43 |
 | omissionNnm | num | 漏签天数   | 13 |
+| openNotifica | bool | 弹窗通知(?) | false |
 | redirectContent | str | (?) | taskCenter |
 | redirectText | str | (?)   | 任务中心 |
 | redirectType | num | (?)   | 2 |
 | repleNum | num | (?)   | 0 |
 | sigInNum | num | 签到天数 | 3, 注意这个字段单词拼写是错误的 |
 | signInGoodsConfigs | arr | 签到奖励物品数组 |  |
+| signLoopGoodsList | arr | 限时签到奖励物品数组 | |
 
-### `signInGoodsConfigs`成员对象
+### `signInGoodsConfigs` `signLoopGoodsList` 成员对象
 
 | 字段      | 类型 | 内容         | 备注                                                         |
 | --------- | ---- | ------------ | ------------------------------------------------------------ |
@@ -145,14 +154,19 @@ try {
   "code": 200,
   "data": {
     "disposableGoodsList": [],
-    "disposableSignNum": 0,
-    "eventEndTimes": "2024-05-31 23:59:59",
-    "eventStartTimes": "2024-05-01 00:00:00",
+    "disposableSignNum": 5,
+    "eventEndTimes": "2024-06-30 23:59:59",
+    "eventStartTimes": "2024-06-01 00:00:00",
     "expendGold": 200,
     "expendNum": 3,
-    "isSigIn": false,
-    "nowServerTimes": "2024-05-24 18:01:23",
-    "omissionNnm": 21,
+    "isSigIn": true,
+    "loopDescription": "无",
+    "loopEndTimes": "2024-06-10 23:59:59",
+    "loopSignName": "限时签到",
+    "loopSignNum": 2,
+    "loopStartTimes": "2024-06-01 00:00:00",
+    "nowServerTimes": "2024-06-02 20:57:18",
+    "omissionNnm": 0,
     "openNotifica": false,
     "redirectContent": "taskCenter",
     "redirectText": "任务中心",
@@ -164,314 +178,368 @@ try {
         "goodsId": 1,
         "goodsName": "螺母",
         "goodsNum": 100000,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/81d4054407ee4a87bfb0171fc43881b220240518.png",
-        "id": 790,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/190aa57b24214baaab421a79e75f6bc420240528.png",
+        "id": 900,
         "isGain": false,
         "serialNum": 0,
-        "signId": 16
+        "signId": 22
       },
       {
         "goodsId": 60001,
         "goodsName": "低级突破材料黑盒",
         "goodsNum": 10,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/ebabbf0b776542d98121e9dd3342ff9f20240518.png",
-        "id": 791,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/4c6845aefb36470ca7689057dc5ef21c20240528.png",
+        "id": 901,
         "isGain": false,
         "serialNum": 1,
-        "signId": 16
+        "signId": 22
       },
       {
         "goodsId": 30013,
         "goodsName": "经验仓·大",
         "goodsNum": 5,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/c9db6799fc3541d6af94cc7b1b8ff1e420240518.png",
-        "id": 792,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/96448f44069c423c900d8056d81b9c9020240528.png",
+        "id": 902,
         "isGain": false,
         "serialNum": 2,
-        "signId": 16
+        "signId": 22
       },
       {
         "goodsId": 50005,
         "goodsName": "活动角色研发券",
         "goodsNum": 50,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/f8f88a0b81ab4987b4d721762f08aa7e20240518.png",
-        "id": 793,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/501adb3295e94f0682b571938cd4957720240528.png",
+        "id": 903,
         "isGain": false,
         "serialNum": 3,
-        "signId": 16
+        "signId": 22
       },
       {
         "goodsId": 31104,
         "goodsName": "武器强化素材Ⅳ",
         "goodsNum": 5,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/571e9544a48f441991cd244ce800587720240518.png",
-        "id": 794,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/eb4adabb73d74690ac54d08225639d0f20240528.png",
+        "id": 904,
         "isGain": false,
         "serialNum": 4,
-        "signId": 16
+        "signId": 22
       },
       {
         "goodsId": 31204,
         "goodsName": "意识强化素材Ⅳ",
         "goodsNum": 5,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/15176ef650f8493ea04badddace5ebd420240518.png",
-        "id": 795,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/efaa880208a34f268796f5e4b4015c8f20240528.png",
+        "id": 905,
         "isGain": false,
         "serialNum": 5,
-        "signId": 16
+        "signId": 22
       },
       {
         "goodsId": 60002,
         "goodsName": "高级突破材料黑盒",
         "goodsNum": 5,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/03f4c373f9c34afb9c60e06515bc4aa620240518.png",
-        "id": 796,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/6c6f3f4bc60d45aaad4bd518560aad5f20240528.png",
+        "id": 906,
         "isGain": false,
         "serialNum": 6,
-        "signId": 16
+        "signId": 22
       },
       {
         "goodsId": 1,
         "goodsName": "螺母",
         "goodsNum": 100000,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/81d4054407ee4a87bfb0171fc43881b220240518.png",
-        "id": 797,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/190aa57b24214baaab421a79e75f6bc420240528.png",
+        "id": 907,
         "isGain": false,
         "serialNum": 7,
-        "signId": 16
+        "signId": 22
       },
       {
         "goodsId": 60001,
         "goodsName": "低级突破材料黑盒",
         "goodsNum": 10,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/ebabbf0b776542d98121e9dd3342ff9f20240518.png",
-        "id": 798,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/4c6845aefb36470ca7689057dc5ef21c20240528.png",
+        "id": 908,
         "isGain": false,
         "serialNum": 8,
-        "signId": 16
+        "signId": 22
       },
       {
         "goodsId": 50005,
         "goodsName": "活动角色研发券",
         "goodsNum": 50,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/f8f88a0b81ab4987b4d721762f08aa7e20240518.png",
-        "id": 799,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/501adb3295e94f0682b571938cd4957720240528.png",
+        "id": 909,
         "isGain": false,
         "serialNum": 9,
-        "signId": 16
+        "signId": 22
       },
       {
         "goodsId": 30013,
         "goodsName": "经验仓·大",
         "goodsNum": 5,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/c9db6799fc3541d6af94cc7b1b8ff1e420240518.png",
-        "id": 800,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/96448f44069c423c900d8056d81b9c9020240528.png",
+        "id": 910,
         "isGain": false,
         "serialNum": 10,
-        "signId": 16
+        "signId": 22
       },
       {
         "goodsId": 31104,
         "goodsName": "武器强化素材Ⅳ",
         "goodsNum": 5,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/571e9544a48f441991cd244ce800587720240518.png",
-        "id": 801,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/eb4adabb73d74690ac54d08225639d0f20240528.png",
+        "id": 911,
         "isGain": false,
         "serialNum": 11,
-        "signId": 16
+        "signId": 22
       },
       {
         "goodsId": 31204,
         "goodsName": "意识强化素材Ⅳ",
         "goodsNum": 5,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/15176ef650f8493ea04badddace5ebd420240518.png",
-        "id": 802,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/efaa880208a34f268796f5e4b4015c8f20240528.png",
+        "id": 912,
         "isGain": false,
         "serialNum": 12,
-        "signId": 16
+        "signId": 22
       },
       {
         "goodsId": 60002,
         "goodsName": "高级突破材料黑盒",
         "goodsNum": 5,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/03f4c373f9c34afb9c60e06515bc4aa620240518.png",
-        "id": 803,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/6c6f3f4bc60d45aaad4bd518560aad5f20240528.png",
+        "id": 913,
         "isGain": false,
         "serialNum": 13,
-        "signId": 16
+        "signId": 22
       },
       {
         "goodsId": 1,
         "goodsName": "螺母",
         "goodsNum": 150000,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/81d4054407ee4a87bfb0171fc43881b220240518.png",
-        "id": 804,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/190aa57b24214baaab421a79e75f6bc420240528.png",
+        "id": 914,
         "isGain": false,
         "serialNum": 14,
-        "signId": 16
+        "signId": 22
       },
       {
         "goodsId": 50005,
         "goodsName": "活动角色研发券",
         "goodsNum": 50,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/f8f88a0b81ab4987b4d721762f08aa7e20240518.png",
-        "id": 805,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/501adb3295e94f0682b571938cd4957720240528.png",
+        "id": 915,
         "isGain": false,
         "serialNum": 15,
-        "signId": 16
+        "signId": 22
       },
       {
         "goodsId": 60001,
         "goodsName": "低级突破材料黑盒",
         "goodsNum": 15,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/ebabbf0b776542d98121e9dd3342ff9f20240518.png",
-        "id": 806,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/4c6845aefb36470ca7689057dc5ef21c20240528.png",
+        "id": 916,
         "isGain": false,
         "serialNum": 16,
-        "signId": 16
+        "signId": 22
       },
       {
         "goodsId": 30013,
         "goodsName": "经验仓·大",
         "goodsNum": 8,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/c9db6799fc3541d6af94cc7b1b8ff1e420240518.png",
-        "id": 807,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/96448f44069c423c900d8056d81b9c9020240528.png",
+        "id": 917,
         "isGain": false,
         "serialNum": 17,
-        "signId": 16
+        "signId": 22
       },
       {
         "goodsId": 31104,
         "goodsName": "武器强化素材Ⅳ",
         "goodsNum": 8,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/571e9544a48f441991cd244ce800587720240518.png",
-        "id": 808,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/eb4adabb73d74690ac54d08225639d0f20240528.png",
+        "id": 918,
         "isGain": false,
         "serialNum": 18,
-        "signId": 16
+        "signId": 22
       },
       {
         "goodsId": 31204,
         "goodsName": "意识强化素材Ⅳ",
         "goodsNum": 8,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/15176ef650f8493ea04badddace5ebd420240518.png",
-        "id": 809,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/efaa880208a34f268796f5e4b4015c8f20240528.png",
+        "id": 919,
         "isGain": false,
         "serialNum": 19,
-        "signId": 16
+        "signId": 22
       },
       {
         "goodsId": 60002,
         "goodsName": "高级突破材料黑盒",
         "goodsNum": 8,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/03f4c373f9c34afb9c60e06515bc4aa620240518.png",
-        "id": 810,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/6c6f3f4bc60d45aaad4bd518560aad5f20240528.png",
+        "id": 920,
         "isGain": false,
         "serialNum": 20,
-        "signId": 16
+        "signId": 22
       },
       {
         "goodsId": 50005,
         "goodsName": "活动角色研发券",
         "goodsNum": 50,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/f8f88a0b81ab4987b4d721762f08aa7e20240518.png",
-        "id": 811,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/501adb3295e94f0682b571938cd4957720240528.png",
+        "id": 921,
         "isGain": false,
         "serialNum": 21,
-        "signId": 16
+        "signId": 22
       },
       {
         "goodsId": 1,
         "goodsName": "螺母",
         "goodsNum": 150000,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/81d4054407ee4a87bfb0171fc43881b220240518.png",
-        "id": 812,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/190aa57b24214baaab421a79e75f6bc420240528.png",
+        "id": 922,
         "isGain": false,
         "serialNum": 22,
-        "signId": 16
+        "signId": 22
       },
       {
         "goodsId": 60001,
         "goodsName": "低级突破材料黑盒",
         "goodsNum": 15,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/ebabbf0b776542d98121e9dd3342ff9f20240518.png",
-        "id": 813,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/4c6845aefb36470ca7689057dc5ef21c20240528.png",
+        "id": 923,
         "isGain": false,
         "serialNum": 23,
-        "signId": 16
+        "signId": 22
       },
       {
         "goodsId": 30013,
         "goodsName": "经验仓·大",
         "goodsNum": 8,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/c9db6799fc3541d6af94cc7b1b8ff1e420240518.png",
-        "id": 814,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/96448f44069c423c900d8056d81b9c9020240528.png",
+        "id": 924,
         "isGain": false,
         "serialNum": 24,
-        "signId": 16
+        "signId": 22
       },
       {
         "goodsId": 31104,
         "goodsName": "武器强化素材Ⅳ",
         "goodsNum": 8,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/571e9544a48f441991cd244ce800587720240518.png",
-        "id": 815,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/eb4adabb73d74690ac54d08225639d0f20240528.png",
+        "id": 925,
         "isGain": false,
         "serialNum": 25,
-        "signId": 16
+        "signId": 22
       },
       {
         "goodsId": 31204,
         "goodsName": "意识强化素材Ⅳ",
         "goodsNum": 8,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/15176ef650f8493ea04badddace5ebd420240518.png",
-        "id": 816,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/efaa880208a34f268796f5e4b4015c8f20240528.png",
+        "id": 926,
         "isGain": false,
         "serialNum": 26,
-        "signId": 16
+        "signId": 22
       },
       {
         "goodsId": 60002,
         "goodsName": "高级突破材料黑盒",
         "goodsNum": 8,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/03f4c373f9c34afb9c60e06515bc4aa620240518.png",
-        "id": 817,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/6c6f3f4bc60d45aaad4bd518560aad5f20240528.png",
+        "id": 927,
         "isGain": false,
         "serialNum": 27,
-        "signId": 16
+        "signId": 22
       },
       {
         "goodsId": 40200,
         "goodsName": "支援突破套组·小",
         "goodsNum": 5,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/255e67bda0ca446dabd4958a42726d7d20240518.png",
-        "id": 818,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/9ae9c0dfdf2f471396dd9ef01b08d6eb20240528.png",
+        "id": 928,
         "isGain": false,
         "serialNum": 28,
-        "signId": 16
+        "signId": 22
       },
       {
         "goodsId": 90030,
         "goodsName": "中型血清组β",
         "goodsNum": 3,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/9b087b6ad62c46f69f10263d96cee83520240518.png",
-        "id": 819,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/0f95cc73699a43528e5ae4a8c98ff59220240528.png",
+        "id": 929,
         "isGain": false,
         "serialNum": 29,
-        "signId": 16
-      },
-      {
-        "goodsId": 1,
-        "goodsName": "螺母",
-        "goodsNum": 150000,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/81d4054407ee4a87bfb0171fc43881b220240518.png",
-        "id": 820,
-        "isGain": false,
-        "serialNum": 30,
-        "signId": 16
+        "signId": 22
       }
     ],
-    "signLoopGoodsList": []
+    "signLoopGoodsList": [
+      {
+        "goodsId": 29,
+        "goodsName": "6星·意识碎片",
+        "goodsNum": 50,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/becc681afea24e0383ff4b7e4fdfc78920240528.png",
+        "isGain": true,
+        "serialNum": 0,
+        "signId": 3
+      },
+      {
+        "goodsId": 60001,
+        "goodsName": "低级突破材料黑盒",
+        "goodsNum": 20,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/3bae70fe3e4649b4841922562be8eba420240528.png",
+        "isGain": true,
+        "serialNum": 1,
+        "signId": 3
+      },
+      {
+        "goodsId": 31204,
+        "goodsName": "意识强化素材Ⅳ",
+        "goodsNum": 10,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/a35cb762c14044ea86778fba94c7b13920240528.png",
+        "isGain": false,
+        "serialNum": 2,
+        "signId": 3
+      },
+      {
+        "goodsId": 29,
+        "goodsName": "6星·意识碎片",
+        "goodsNum": 100,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/becc681afea24e0383ff4b7e4fdfc78920240528.png",
+        "isGain": false,
+        "serialNum": 3,
+        "signId": 3
+      },
+      {
+        "goodsId": 31204,
+        "goodsName": "意识强化素材Ⅳ",
+        "goodsNum": 10,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/a35cb762c14044ea86778fba94c7b13920240528.png",
+        "isGain": false,
+        "serialNum": 4,
+        "signId": 3
+      },
+      {
+        "goodsId": 60002,
+        "goodsName": "高级突破材料黑盒",
+        "goodsNum": 8,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/afd604b238c545b8bd07a9d5c50775e120240528.png",
+        "isGain": false,
+        "serialNum": 5,
+        "signId": 3
+      },
+      {
+        "goodsId": 50005,
+        "goodsName": "活动角色研发券",
+        "goodsNum": 50,
+        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/f355c84dcf1e4f349e4243f9b09909d920240528.png",
+        "isGain": false,
+        "serialNum": 6,
+        "signId": 3
+      }
+    ]
   },
   "msg": "请求成功",
   "success": true
