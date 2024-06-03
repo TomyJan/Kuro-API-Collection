@@ -24,7 +24,7 @@ API 请求头大致相同, 具体请见 [参数总结](/PARAMS.md)
 
 ### [玩家](/API/gamer)
 
-- [取账号绑定的游戏账号信息](/API/gamer/role/list.md)
+- [取账号绑定的游戏账号信息](/API/gamer/role/list.md) 2024.06.03
 
 ### [奖励](/API/encourage)
 

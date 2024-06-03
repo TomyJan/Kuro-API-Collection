@@ -1,6 +1,6 @@
 # 取账号绑定的游戏账号信息
 
-更新时间: unrecorded
+更新时间: 2024.06.03
 
 ## 请求地址
 
@@ -58,18 +58,19 @@ json
 | --------- | ---- | ------------ | ------------------------------------------------------------ |
 | userId | num  | 账号 id   | 10065669 |
 | gameId | num | 游戏 id  | 战双 = 2, 鸣潮 = 3 |
-| serverId | str | 服务器 id | 星火服 = 1000, 信标服 = ? |
-| serverName | num | 服务器名称 | 星火服 |
-| roleId | str | 游戏账号 id | 46218962 |
+| serverId | str | 服务器 id | 战双星火服 = 1000, 信标服 = ?<br />鸣潮CN = 76402e5b20be2c39f095a152090afddc, OS = ? |
+| serverName | num | 服务器名称 | 星火服, 信标服, 鸣潮 |
+| roleId | str | 游戏账号 id | 46218962, 101812955 |
 | roleName | str | 游戏账号昵称 | TomyJan |
-| isDefault | bool | 是否默认展示账号 |  |
-| isHidden | bool | (?) | false                                                        |
-| createTime | ? | (?)   | null |
-| gameHeadUrl | str | 游戏账号头像图片链接 | https://prod-alicdn-community.kurobbs.com/game/1677047559950121506.jpg |
+| isDefault | bool | 是否默认展示账号 | true |
+| gameHeadUrl | str | 游戏账号头像图片链接 | https://prod-alicdn-community.kurobbs.com/game/zhanshuangIcon.png<br />https://prod-alicdn-community.kurobbs.com/game/mingchaoIcon.png |
 | gameLevel | str | 游戏等级 | 98 |
-| roleScore | str | 游戏成员墙内展示成员的总评分 | 33945 |
+| roleScore | str (战双)<br />null(鸣潮) | (仅战双) 游戏成员墙内展示成员的总评分 | 33945, null |
 | roleNum | num | 角色数量 | 21 |
-| fashionCollectionPercent | num | 涂装收集率 | 0.033, 客户端内会以百分比展示 |
+| fashionCollectionPercent | num | (仅战双) 涂装收集率 | 0.033, 客户端内会以百分比展示 |
+| phantomPercent | num | (仅鸣潮) 声骸收集进度 | 0.519, 客户端内会以百分比展示 |
+| achievementCount | num | (仅鸣潮) 成就数量 | 50 |
+| actionRecoverSwitch | bool | 是否默认展示的卡片? | true/false |
 
 ## 示例
 
@@ -130,32 +131,34 @@ try {
       "gameId": 2,
       "serverId": "1000",
       "serverName": "星火服",
-      "roleId": "23547501",
-      "roleName": "指挥官06348",
-      "isDefault": null,
-      "isHidden": false,
-      "createTime": null,
-      "gameHeadUrl": "https://prod-alicdn-community.kurobbs.com/game/1677047559950121506.jpg",
-      "gameLevel": "60",
-      "roleScore": "7160",
-      "roleNum": 5,
-      "fashionCollectionPercent": 0.008
-    },
-    {
-      "userId": 10065669,
-      "gameId": 2,
-      "serverId": "1000",
-      "serverName": "星火服",
       "roleId": "46218962",
       "roleName": "TomyJan",
       "isDefault": true,
-      "isHidden": false,
-      "createTime": null,
-      "gameHeadUrl": "https://prod-alicdn-community.kurobbs.com/game/1677047559950121506.jpg",
-      "gameLevel": "98",
-      "roleScore": "33945",
-      "roleNum": 21,
-      "fashionCollectionPercent": 0.033
+      "gameHeadUrl": "https://prod-alicdn-community.kurobbs.com/game/zhanshuangIcon.png",
+      "gameLevel": "119",
+      "roleScore": "61395",
+      "roleNum": 36,
+      "fashionCollectionPercent": 0.059,
+      "phantomPercent": 0,
+      "achievementCount": 0,
+      "actionRecoverSwitch": true
+    },
+    {
+      "userId": 10065669,
+      "gameId": 3,
+      "serverId": "76402e5b20be2c39f095a152090afddc",
+      "serverName": "鸣潮",
+      "roleId": "101812955",
+      "roleName": "首席",
+      "isDefault": true,
+      "gameHeadUrl": "https://prod-alicdn-community.kurobbs.com/game/mingchaoIcon.png",
+      "gameLevel": "32",
+      "roleScore": null,
+      "roleNum": 14,
+      "fashionCollectionPercent": 0,
+      "phantomPercent": 0.519,
+      "achievementCount": 50,
+      "actionRecoverSwitch": false
     }
   ],
   "success": true
