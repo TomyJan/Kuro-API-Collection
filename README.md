@@ -12,7 +12,7 @@ API 请求头大致相同, 具体请见 [参数总结](/PARAMS.md)
 
 ### [用户](/API/user)
 
-- ~~[发送验证码](#)~~ (麻烦还要极验)
+- [发送验证码 APP 端](/API/user/getSmsCode.md) 2024.06.17
 - [验证码登录 APP 端](/API/user/sdkLogin.md)
 - [验证码登录 Web 端](/API/user/sdkLoginForH5.md)
 - [取个人信息 V2](/API/user/mineV2.md)
