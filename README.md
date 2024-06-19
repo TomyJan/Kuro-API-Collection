@@ -28,6 +28,7 @@ API 请求头大致相同, 具体请见 [参数总结](/PARAMS.md)
 
 - [取账号绑定的游戏账号信息](/API/gamer/role/list.md) 2024.06.03
 - [鸣潮游戏角色基础数据](/gamer/roleBox/aki/baseData.md) 2024.06.19
+- [鸣潮游戏角色声骸收集数据](/gamer/roleBox/aki/calabashData.md) 2024.06.19
 
 ### [奖励](/API/encourage)
 
