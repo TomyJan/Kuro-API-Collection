@@ -16,22 +16,22 @@ null
 
 ## 请求头
 
-| 字段            | 类型 | 内容 | 备注                                     |
-| --------------- | ---- | ---- | ---------------------------------------- |
-| osVersion       | str  | -    | Android                                  |
-| devCode         | str  | -    | 073A9EFAC18FC50616DD15808DAE719DBCB904B7 |
-| distinct_id     | str  | -    | 96b1567b-b5e6-422f-a1dd-7cb1e58c5db7     |
-| countryCode     | str  | -    | CN                                       |
-| ip              | str  |      | 192.168.102.138                          |
-| model           | str  |      | 23127PN0CC                               |
-| source          | str  | 必须 | android                                  |
-| lang            | str  |      | zh-Hans                                  |
-| version         | str  |      | 2.2.0                                    |
-| versionCode     | str  |      | 2200                                     |
-| channelId       | str  |      | 2                                        |
-| Content-Type    | str  |      | application/x-www-form-urlencoded        |
-| Accept-Encoding | str  |      | gzip                                     |
-| User-Agent      | str  |      | okhttp/3.11.0                            |
+| 字段            | 类型 | 内容         | 备注                                     |
+| --------------- | ---- | ------------ | ---------------------------------------- |
+| osVersion       | str  | -            | Android                                  |
+| devCode         | str  | 必须但不校验 | 073A9EFAC18FC50616DD15808DAE719DBCB904B7 |
+| distinct_id     | str  | -            | 96b1567b-b5e6-422f-a1dd-7cb1e58c5db7     |
+| countryCode     | str  | -            | CN                                       |
+| ip              | str  |              | 192.168.102.138                          |
+| model           | str  |              | 23127PN0CC                               |
+| source          | str  | 必须         | android                                  |
+| lang            | str  |              | zh-Hans                                  |
+| version         | str  |              | 2.2.0                                    |
+| versionCode     | str  |              | 2200                                     |
+| channelId       | str  |              | 2                                        |
+| Content-Type    | str  |              | application/x-www-form-urlencoded        |
+| Accept-Encoding | str  |              | gzip                                     |
+| User-Agent      | str  |              | okhttp/3.11.0                            |
 
 ## 请求体
 
