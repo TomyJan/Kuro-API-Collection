@@ -4,7 +4,7 @@
 
 ## 请求头
 
-目前 [取游戏签到信息](/API/encourage/signIn/initSignIn.md) | [游戏签到](/API/encourage/signIn.md) 和 `/activity` 路由下的请求头和其他不一样, 类似浏览器环境, 可以前往查看, 其他 API 大差不差
+目前 [取游戏签到信息 V2](/API/encourage/signIn/initSignInV2.md) , [游戏签到 V2](/API/encourage/signIn/v2.md) , `/gamer/roleBox` 和 `/activity` 路由下的请求头和其他不一样, 类似浏览器环境, 可以前往查看, 其他 API 大差不差
 
 ### 共有请求头
 
