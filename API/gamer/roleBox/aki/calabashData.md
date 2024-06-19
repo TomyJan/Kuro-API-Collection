@@ -85,13 +85,13 @@ json
 
 ### `phantom` 成员对象
 
-| 字段      | 类型 | 内容         | 备注                                                         |
-| --------- | ---- | ------------ | ------------------------------------------------------------ |
-| name      | str  | 声骸名称     | 坚岩斗士                                                     |
-| phantomId | num  | 声骸 id      | 390077021                                                    |
-| cost      | num  | 声骸 COST    | 3                                                            |
-| iconUrl   | str  | 声骸图标     | https://web-static.kurobbs.com/adminConfig/35/phantom_icon/1716031252086.png |
-| acronym   | str  | 声骸名称音序 | jyds, 牢库你真是抽抽又象象啊                                 |
+| 字段      | 类型 | 内容                           | 备注                                                         |
+| --------- | ---- | ------------------------------ | ------------------------------------------------------------ |
+| name      | str  | 声骸名称                       | 坚岩斗士                                                     |
+| phantomId | num  | 声骸 id                        | 390077021                                                    |
+| cost      | num  | 声骸 COST                      | 3                                                            |
+| iconUrl   | str  | 声骸图标                       | https://web-static.kurobbs.com/adminConfig/35/phantom_icon/1716031252086.png |
+| acronym   | str  | 声骸名称音序, 应该是用来排序的 | jyds, 牢库你真是抽抽又象象啊                                 |
 
 ## 示例
 
