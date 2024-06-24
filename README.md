@@ -6,7 +6,7 @@
 
 目前所整理 API, 除非特别说明, 全部为 APP 端
 
-`2024.05.24` 之后整理的 API 会注明更新时间, API 具体请求和响应可能会有所改变, 如非已经发现的破坏性改动, 将不会积极更新, 请自行测试
+`2024.05.24` 之后整理的 API 已在名称后面注明更新时间, API 具体请求和响应可能会有所改变, 如非已经发现的破坏性改动, 将不会积极更新, 请自行测试
 
 API 请求头大致相同, 具体请见 [参数总结](/PARAMS.md) 
 
@@ -20,7 +20,8 @@ API 请求头大致相同, 具体请见 [参数总结](/PARAMS.md)
 - [取个人信息 V2](/API/user/mineV2.md)
 - [取绑定游戏账号列表](/API/user/role/findRoleList.md)
 - [更新头像链接](/API/user/updateHeadUrl.md)
-- [是否社区签到](/API/user/haveSignIn.md)
+- ~~[是否社区签到](/API/user/haveSignIn.md)~~ 此 API 已弃用, 建议使用下面的
+- [社区签到信息](/API/user/signIn/info.md) 2024.06.24
 - [社区签到](/API/user/signIn.md)
 - [关注用户](/API/user/followUser.md)
 
@@ -48,6 +49,8 @@ API 请求头大致相同, 具体请见 [参数总结](/PARAMS.md)
 - [通用论坛点赞](/API/forum/like.md)
 
 ### [活动](/API/activity)
+
+此分组下的 API 应该均已过期, 待后续更新
 
 - [取活动绑定游戏角色信息](/API/activity/gamer/role/getBindRoleInfo.md)
 - [活动绑定游戏角色](/API/activity/gamer/role/bindRole.md)
