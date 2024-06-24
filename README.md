@@ -33,7 +33,7 @@ API 请求头大致相同, 具体请见 [参数总结](/PARAMS.md)
 
 ### [奖励](/API/encourage)
 
-- [取游戏签到信息 V2](/API/encourage/signIn/initSignInV2.md) 2024.06.02
+- [取游戏签到信息 V2](/API/encourage/signIn/initSignInV2.md) 2024.06.24
 - [游戏签到 V2](/API/encourage/signIn/v2.md) 2024.05.24
 - [取游戏签到记录 V2](/API/encourage/signIn/queryRecordV2.md) 2024.06.04
 - [社区分享任务](/API/encourage/level/shareTask.md)

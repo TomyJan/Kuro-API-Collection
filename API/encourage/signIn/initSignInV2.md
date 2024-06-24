@@ -1,6 +1,6 @@
 # 取游戏签到信息 V2
 
-更新时间: 2024.06.02
+更新时间: 2024.06.24
 
 ## 请求地址
 
@@ -16,32 +16,37 @@ token
 
 ## 请求头
 
-| 字段             | 类型 | 内容  | 备注                                                         |
-| ---------------- | ---- | ----- | ------------------------------------------------------------ |
-| pragma           | str  | -     | no-cache                                                     |
-| cache-control    | str  | -     | no-cache                                                     |
-| accept           | str  | -     | application/json, text/plain, \*/\*                          |
-| source           | str  | -     | android                                                      |
-| user-agent       | str  | UA    | Mozilla/5.0 (Linux; Android 13; 2211133C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.131 Mobile Safari/537.36 Kuro/1.0.9 KuroGameBox/1.0.9 |
-| token            | str  | token | eyJhbGciOiJIUzI1NiJ9.eyJjcmVhdGVkIjoxNjg5NDk4MDkxMjQ1LCJ1c2VySWQiOjEwMDY1NjY5fQ.AAAA_AAAAAAAAAAAAAAAAAAAAAAAAAAA-AAAAAAAAAA |
-| origin           | str  |       | https://web-static.kurobbs.com                               |
-| x-requested-with | str  |       | com.kurogame.kjq                                             |
-| sec-fetch-site   | str  |       | same-site                                                    |
-| sec-fetch-mode   | str  |       | cors                                                         |
-| sec-fetch-dest   | str  |       | empty                                                        |
-| accept-encoding  | str  |       | gzip, deflate, br                                            |
-| accept-language  | str  |       | zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7                          |
+| 字段               | 类型 | 内容  | 备注                                                         |
+| ------------------ | ---- | ----- | ------------------------------------------------------------ |
+| pragma             | str  | -     | no-cache                                                     |
+| cache-control      | str  | -     | no-cache                                                     |
+| sec-ch-ua          | str  | -     | "Not)A;Brand";v="99", "Android WebView";v="127", "Chromium";v="127" |
+| source             | str  | -     | android                                                      |
+| sec-ch-ua-mobile   | str  | -     | ?1                                                           |
+| user-agent         | str  | UA    | Mozilla/5.0 (Linux; Android 14; 23127PN0CC Build/UKQ1.230804.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/127.0.6533.15 Mobile Safari/537.36 Kuro/2.2.0 KuroGameBox/2.2.0 |
+| content-type       | str  | -     | application/x-www-form-urlencoded                            |
+| accept             | str  | -     | `application/json, text/plain, */*`                          |
+| devcode            | str  | -     | 61.178.245.214, Mozilla/5.0 (Linux; Android 14; 23127PN0CC Build/UKQ1.230804.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/127.0.6533.15 Mobile Safari/537.36 Kuro/2.2.0 KuroGameBox/2.2.0 |
+| token              | str  | token | eyJhbGciOiJIUzI1NiJ9.eyJjcmVhdGVkIjoxNjg5NDk4MDkxMjQ1LCJ1c2VySWQiOjEwMDY1NjY5fQ.AAAA_AAAAAAAAAAAAAAAAAAAAAAAAAAA-AAAAAAAAAA |
+| sec-ch-ua-platform | str  | -     | "Android"                                                    |
+| origin             | str  |       | https://web-static.kurobbs.com                               |
+| sec-fetch-site     | str  |       | same-site                                                    |
+| sec-fetch-mode     | str  |       | cors                                                         |
+| sec-fetch-dest     | str  |       | empty                                                        |
+| accept-encoding    | str  |       | gzip, deflate, br, zstd                                      |
+| accept-language    | str  |       | zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7                          |
+| priority           | str  | -     | u=1, i                                                       |
 
 ## 请求体
 
 字符串拼接
 
-| 字段     | 类型 | 内容      | 备注                      |
-| -------- | ---- | --------- | ------------------------- |
-| gameId   | num  | 游戏 id   | 战双 = 2, 鸣潮 = 3        |
-| serverId | str  | 服务器 id | 星火服 = 1000, 信标服 = ? |
-| roleId   | num  | 游戏 uid  | 46218962                  |
-| userId   | num  | 库洛 id   |                           |
+| 字段     | 类型 | 内容      | 备注                                                         |
+| -------- | ---- | --------- | ------------------------------------------------------------ |
+| gameId   | num  | 游戏 id   | 战双 = 2, 鸣潮 = 3                                           |
+| serverId | str  | 服务器 id | 战双: 星火服 = 1000, 信标服 = ?<br />鸣潮: 国服 = 76402e5b20be2c39f095a152090afddc, 其他未记录 |
+| roleId   | num  | 游戏 uid  | 46218962                                                     |
+| userId   | num  | 库洛 id   | 10065669                                                     |
 
 ## 响应体
 
@@ -103,20 +108,24 @@ json
 ```js
 const url = 'https://api.kurobbs.com/encourage/signIn/initSignInV2'
 const headers = {
-    pragma: 'no-cache',
+    'pragma': 'no-cache',
     'cache-control': 'no-cache',
-    accept: 'application/json, text/plain, */*',
-    source: 'android',
-    'user-agent': 'Mozilla/5.0 (Linux; Android 13; 2211133C Build/TKQ1.220905.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.131 Mobile Safari/537.36 Kuro/1.0.9 KuroGameBox/1.0.9',
-    token: 'eyJhbGciOiJIUzI1NiJ9.eyJjcmVhdGVkIjoxNjg5NDk4MDkxMjQ1LCJ1c2VySWQiOjEwMDY1NjY5fQ.AAAA_AAAAAAAAAAAAAAAAAAAAAAAAAAA-AAAAAAAAAA',
+    'sec-ch-ua': '"Not)A;Brand";v="99", "Android WebView";v="127", "Chromium";v="127"',
+    'source': 'android',
+    'sec-ch-ua-mobile': '?1',
+    'user-agent': 'Mozilla/5.0 (Linux; Android 14; 23127PN0CC Build/UKQ1.230804.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/127.0.6533.15 Mobile Safari/537.36 Kuro/2.2.0 KuroGameBox/2.2.0',
     'content-type': 'application/x-www-form-urlencoded',
-    origin: 'https://web-static.kurobbs.com',
-    'x-requested-with': 'com.kurogame.kjq',
+    'accept': 'application/json, text/plain, */*',
+    'devcode': '61.178.245.214, Mozilla/5.0 (Linux; Android 14; 23127PN0CC Build/UKQ1.230804.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/127.0.6533.15 Mobile Safari/537.36 Kuro/2.2.0 KuroGameBox/2.2.0',
+    'token': 'eyJhbGciOiJIUzI1NiJ9.eyJjcmVhdGVkIjoxNjg5NDk4MDkxMjQ1LCJ1c2VySWQiOjEwMDY1NjY5fQ.AAAA_AAAAAAAAAAAAAAAAAAAAAAAAAAA-AAAAAAAAAA',
+    'sec-ch-ua-platform': '"Android"',
+    'origin': 'https://web-static.kurobbs.com',
     'sec-fetch-site': 'same-site',
     'sec-fetch-mode': 'cors',
     'sec-fetch-dest': 'empty',
-    'accept-encoding': 'gzip, deflate, br',
+    'accept-encoding': 'gzip, deflate, br, zstd',
     'accept-language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+    'priority': 'u=1, i',
 }
 
 const formData = new URLSearchParams()
@@ -159,20 +168,15 @@ try {
     "eventStartTimes": "2024-06-01 00:00:00",
     "expendGold": 200,
     "expendNum": 3,
-    "isSigIn": true,
-    "loopDescription": "无",
-    "loopEndTimes": "2024-06-10 23:59:59",
-    "loopSignName": "限时签到",
-    "loopSignNum": 2,
-    "loopStartTimes": "2024-06-01 00:00:00",
-    "nowServerTimes": "2024-06-02 20:57:18",
+    "isSigIn": false,
+    "nowServerTimes": "2024-06-24 20:56:42",
     "omissionNnm": 0,
     "openNotifica": false,
     "redirectContent": "taskCenter",
     "redirectText": "任务中心",
     "redirectType": 2,
     "repleNum": 0,
-    "sigInNum": 2,
+    "sigInNum": 23,
     "signInGoodsConfigs": [
       {
         "goodsId": 1,
@@ -475,71 +479,7 @@ try {
         "signId": 22
       }
     ],
-    "signLoopGoodsList": [
-      {
-        "goodsId": 29,
-        "goodsName": "6星·意识碎片",
-        "goodsNum": 50,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/becc681afea24e0383ff4b7e4fdfc78920240528.png",
-        "isGain": true,
-        "serialNum": 0,
-        "signId": 3
-      },
-      {
-        "goodsId": 60001,
-        "goodsName": "低级突破材料黑盒",
-        "goodsNum": 20,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/3bae70fe3e4649b4841922562be8eba420240528.png",
-        "isGain": true,
-        "serialNum": 1,
-        "signId": 3
-      },
-      {
-        "goodsId": 31204,
-        "goodsName": "意识强化素材Ⅳ",
-        "goodsNum": 10,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/a35cb762c14044ea86778fba94c7b13920240528.png",
-        "isGain": false,
-        "serialNum": 2,
-        "signId": 3
-      },
-      {
-        "goodsId": 29,
-        "goodsName": "6星·意识碎片",
-        "goodsNum": 100,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/becc681afea24e0383ff4b7e4fdfc78920240528.png",
-        "isGain": false,
-        "serialNum": 3,
-        "signId": 3
-      },
-      {
-        "goodsId": 31204,
-        "goodsName": "意识强化素材Ⅳ",
-        "goodsNum": 10,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/a35cb762c14044ea86778fba94c7b13920240528.png",
-        "isGain": false,
-        "serialNum": 4,
-        "signId": 3
-      },
-      {
-        "goodsId": 60002,
-        "goodsName": "高级突破材料黑盒",
-        "goodsNum": 8,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/afd604b238c545b8bd07a9d5c50775e120240528.png",
-        "isGain": false,
-        "serialNum": 5,
-        "signId": 3
-      },
-      {
-        "goodsId": 50005,
-        "goodsName": "活动角色研发券",
-        "goodsNum": 50,
-        "goodsUrl": "https://prod-alicdn-community.kurobbs.com/signInIcon/f355c84dcf1e4f349e4243f9b09909d920240528.png",
-        "isGain": false,
-        "serialNum": 6,
-        "signId": 3
-      }
-    ]
+    "signLoopGoodsList": []
   },
   "msg": "请求成功",
   "success": true
