@@ -22,7 +22,7 @@ API 请求头大致相同, 具体请见 [参数总结](/PARAMS.md)
 - [更新头像链接](/API/user/updateHeadUrl.md)
 - ~~[是否社区签到](/API/user/haveSignIn.md)~~ 此 API 已弃用, 建议使用下面的
 - [社区签到信息](/API/user/signIn/info.md) 2024.06.24
-- [社区签到](/API/user/signIn.md)
+- [社区签到](/API/user/signIn.md) 2024.06.25
 - [关注用户](/API/user/followUser.md)
 
 ### [玩家](/API/gamer)
@@ -35,7 +35,7 @@ API 请求头大致相同, 具体请见 [参数总结](/PARAMS.md)
 ### [奖励](/API/encourage)
 
 - [取游戏签到信息 V2](/API/encourage/signIn/initSignInV2.md) 2024.06.24
-- [游戏签到 V2](/API/encourage/signIn/v2.md) 2024.05.24
+- [游戏签到 V2](/API/encourage/signIn/v2.md) 2024.06.25
 - [取游戏签到记录 V2](/API/encourage/signIn/queryRecordV2.md) 2024.06.04
 - [社区分享任务](/API/encourage/level/shareTask.md)
 - [取任务进度](/API/encourage/level/getTaskProcess.md)
