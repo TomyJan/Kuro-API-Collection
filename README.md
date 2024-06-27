@@ -31,6 +31,8 @@ API 请求头大致相同, 具体请见 [参数总结](/PARAMS.md)
 - [鸣潮游戏角色基础数据](/API/gamer/roleBox/aki/baseData.md) 2024.06.19
 - [鸣潮游戏角色声骸收集数据](/API/gamer/roleBox/aki/calabashData.md) 2024.06.19
 - [鸣潮游戏角色探索数据](/API/gamer/roleBox/aki/exploreIndex.md) 2024.06.19
+- [战双小组件数据](/API/gamer/widget/game2/getData.md) 2024.06.27
+- [鸣潮小组件数据](/API/gamer/widget/game3/getData.md) 2024.06.27
 
 ### [奖励](/API/encourage)
 
