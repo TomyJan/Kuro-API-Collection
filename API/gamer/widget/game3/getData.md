@@ -6,8 +6,8 @@
 
 ## 请求地址
 
-> 库街区内: https://event.kurobbs.com/gamer/widget/game2/getData
-> 小组件: https://api.kurobbs.com/gamer/widget/game2/getData
+> ~~库街区内: https://event.kurobbs.com/gamer/widget/game3/getData~~ 又改回去了
+> 小组件: https://api.kurobbs.com/gamer/widget/game3/getData
 
 ## 请求方式
 
