@@ -2,11 +2,12 @@
 
 注意这里同一个 API 有两套请求参数, 分别用于库街区内`角色信息`页面和桌面小组件数据更新, 但是响应参数一致, 下文都有说明
 
-更新时间: 2024.06.27
+更新时间: 2024.06.29
 
 ## 请求地址
 
-> https://api.kurobbs.com/gamer/widget/game2/getData
+> 库街区内: https://event.kurobbs.com/gamer/widget/game2/getData
+> 小组件: https://api.kurobbs.com/gamer/widget/game2/getData
 
 ## 请求方式
 
@@ -94,10 +95,10 @@ json, 两个渠道响应完全一致
 | name             | str/null | 名称       | 血清/委托情况...见下方示例数据                               |
 | img              | str      | 图标链接   | https://web-static.kurobbs.com/gamerdata/widget/game2/actionIcon.png...见下方示例数据 |
 | key              | str/null | 单位       | null/血清/黑卡...见下方示例数据                              |
-| refreshTimeStamp | num/null | 十位时间戳 | 血清回满/副本刷新时间戳                                      |
-| expireTimeStamp  | num/null | 十位时间戳 | 资源过期时间戳, 血清好像固定为次月 1日 5 点, 其他均为 null   |
+| refreshTimeStamp | num/null | 十位时间戳 | 血清回满/副本刷新时间戳, 恢复后为0                           |
+| expireTimeStamp  | num/null | 十位时间戳 | 资源过期时间戳, 血清好像固定为次月 1日 5 点, 恢复后为0, 其他均为 null |
 | value            | str/null | 值         | 未选区/未解锁/`145/240`                                      |
-| status           | num      | 状态       | 0 = 恢复中, 2 = 未选区                                       |
+| status           | num      | 状态       | 0 = 恢复中, 1 = 未解锁, 2 = 未选区                           |
 | cur              | num      | 当前数量   | 145                                                          |
 | total            | num      | 最大数量   | 240                                                          |
 

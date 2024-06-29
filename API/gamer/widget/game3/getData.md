@@ -2,11 +2,12 @@
 
 注意这里同一个 API 有两套请求参数, 分别用于库街区内`数据终端`页面和桌面小组件数据更新, 但是响应参数一致, 下文都有说明
 
-更新时间: 2024.06.27
+更新时间: 2024.06.29
 
 ## 请求地址
 
-> https://api.kurobbs.com/gamer/widget/game3/getData
+> 库街区内: https://event.kurobbs.com/gamer/widget/game2/getData
+> 小组件: https://api.kurobbs.com/gamer/widget/game2/getData
 
 ## 请求方式
 
