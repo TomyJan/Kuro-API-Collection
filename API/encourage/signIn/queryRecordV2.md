@@ -1,6 +1,6 @@
 # 取游戏签到记录 V2
 
-更新时间: 2024.06.04
+更新时间: 2024.06.29
 
 ## 请求地址
 
@@ -64,17 +64,17 @@ json
 
 ### `data`成员对象
 
-| 字段        | 类型 | 内容         | 备注                                             |
-| ----------- | ---- | ------------ | ------------------------------------------------ |
-| goodsId     | num  | 物品 id      | 1                                                |
-| goodsName   | str  | 物品名称     | 螺母                                             |
-| goodsNum    | num  | 物品数量     | 100000                                           |
-| goodsUrl    | str  | 物品图标链接 | https://web-static.kurobbs.com/game/item/2/1.png |
-| id          | num  | (?)          | 26194816                                         |
-| sendState   | bool | (?)          | false                                            |
-| sendStateV2 | num  | (?)          | 0                                                |
-| sigInDate   | str  | 签到日期     | 战双: 2024-06-02<br />鸣潮: 2024-06-04 00:02:22  |
-| type        | num  | 签到类型?    | 0=普通签到, 3=限时签到                           |
+| 字段        | 类型 | 内容         | 备注                                               |
+| ----------- | ---- | ------------ | -------------------------------------------------- |
+| goodsId     | num  | 物品 id      | 1                                                  |
+| goodsName   | str  | 物品名称     | 螺母                                               |
+| goodsNum    | num  | 物品数量     | 100000                                             |
+| goodsUrl    | str  | 物品图标链接 | https://web-static.kurobbs.com/game/item/2/1.png   |
+| id          | num  | (?)          | 26194816                                           |
+| sendState   | bool | (?)          | false                                              |
+| sendStateV2 | num  | (?)          | 0                                                  |
+| sigInDate   | str  | 签到日期     | 战双: 2024-06-02<br />鸣潮: 2024-06-04 00:02:22    |
+| type        | num  | 签到类型?    | 0 = 普通签到, 2 = 新手一次性签到活动, 3 = 限时签到 |
 
 ## 示例
 
