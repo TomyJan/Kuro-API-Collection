@@ -27,6 +27,8 @@ API 请求头大致相同, 具体请见 [参数总结](/PARAMS.md)
 - [社区签到信息](/API/user/signIn/info.md) 2024.06.24
 - [社区签到](/API/user/signIn.md) 2024.06.25
 - [关注用户](/API/user/followUser.md)
+- [获取accesstoken](/API/user/accesstoken.md) 2024.07.01
+- [获取地址](/API/user/address.md) 2024.07.01
 
 ### [玩家](/API/gamer)
 
