@@ -53,6 +53,12 @@ API 请求头大致相同, 具体请见 [参数总结](/PARAMS.md)
 - [取帖子详情](/API/forum/getPostDetail.md)
 - [通用论坛点赞](/API/forum/like.md)
 
+### [鸣潮](/API/aki/roleBox/akiBox)
+
+- [[新] 鸣潮游戏角色基础数据](API/aki/roleBox/akiBox/baseData.md) 2025.05.25
+- [[新] 鸣潮游戏角色声骸收集数据](API/aki/roleBox/akiBox/calabashData.md) 2025.05.25
+- [[新] 鸣潮游戏角色探索数据](API/aki/roleBox/akiBox/exploreIndex.md) 2025.05.25
+
 ### [活动](/API/activity)
 
 此分组下的 API 应该均已过期, 待后续更新
