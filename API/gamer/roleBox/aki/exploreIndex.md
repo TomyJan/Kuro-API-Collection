@@ -2,6 +2,10 @@
 
 更新时间: 2024.06.19
 
+# 状态
+
+<font color=Red>已失效</font>，替代方案：[[新] 鸣潮游戏角色探索数据](../../../aki/roleBox/akiBox/exploreIndex.md)
+
 ## 请求地址
 
 > https://api.kurobbs.com/gamer/roleBox/aki/exploreIndex
