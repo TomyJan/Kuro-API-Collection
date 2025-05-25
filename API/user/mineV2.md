@@ -61,33 +61,34 @@ json
 
 ### `mine`对象
 
-| 字段      | 类型 | 内容         | 备注                                                         |
-| --------- | ---- | ------------ | ------------------------------------------------------------ |
-| collectCount | num  | (?)      | 0 |
-| commentCount | num | 评论数       |                                      |
-| fansCount | num | 粉丝数 |  |
-| fansNewCount | num | 新增粉丝数 |  |
-| followCount | num | 关注数     |    |
-| gender | num | (?) | 3 |
-| goldNum | num | (?) | 0 |
-| headUrl | num | 头像图片链接 | https://prod-alicdn-community.kurobbs.com/headCode/RoleHeadLuolannew.png |
-| ifCompleteQuiz | num | (?)   | 1 |
-| isFollow | num | (?)   | 0 |
-| isLoginUser | num | (?) | 1 |
-| isMute | num | (?) | 0 |
-| lastLoginModelType | str | 最后登录设备型号 | 2211133C |
-| lastLoginTime | str | 最后登录时间 | 2023-07-27 01:10:51 |
-| levelTotal | num | (?) | 0 |
-| likeCount | num | (?) | 0 |
-| medalList | arr | (?) | 空的 |
-| mobile | num | 打码的手机号 | 188****8888 |
-| postCount | num | (?) | 0 |
-| registerTime | num | 注册日期 | 2023.07.16 |
-| signature | num | 签名 | 这个人很懒，还没有签名。 |
-| signatureReviewStatus | num | (?) | 1 |
-| status | num | (?) | 0 |
-| userId | num | 账号 id | 10065669 |
-| userName | num | 昵称 |  |
+| 字段                    | 类型  | 内容       | 备注                                                                       |
+|-----------------------|-----|----------|--------------------------------------------------------------------------|
+| collectCount          | num | (?)      | 0                                                                        |
+| commentCount          | num | 评论数      |                                                                          |
+| fansCount             | num | 粉丝数      |                                                                          |
+| fansNewCount          | num | 新增粉丝数    |                                                                          |
+| followCount           | num | 关注数      |                                                                          |
+| gender                | num | (?)      | 3                                                                        |
+| goldNum               | num | (?)      | 0                                                                        |
+| headUrl               | num | 头像图片链接   | https://prod-alicdn-community.kurobbs.com/headCode/RoleHeadLuolannew.png |
+| ifCompleteQuiz        | num | (?)      | 1                                                                        |
+| ipRegion              | str | ip属地     | 省份                                                                       |
+| isFollow              | num | (?)      | 0                                                                        |
+| isLoginUser           | num | (?)      | 1                                                                        |
+| isMute                | num | (?)      | 0                                                                        |
+| lastLoginModelType    | str | 最后登录设备型号 | 2211133C                                                                 |
+| lastLoginTime         | str | 最后登录时间   | 2023-07-27 01:10:51                                                      |
+| levelTotal            | num | (?)      | 0                                                                        |
+| likeCount             | num | (?)      | 0                                                                        |
+| medalList             | arr | (?)      | 空的                                                                       |
+| mobile                | num | 打码的手机号   | 188****8888                                                              |
+| postCount             | num | (?)      | 0                                                                        |
+| registerTime          | num | 注册日期     | 2023.07.16                                                               |
+| signature             | num | 签名       | 这个人很懒，还没有签名。                                                             |
+| signatureReviewStatus | num | (?)      | 1                                                                        |
+| status                | num | (?)      | 0                                                                        |
+| userId                | num | 账号 id    | 10065669                                                                 |
+| userName              | num | 昵称       |                                                                          |
 
 ## 示例
 
@@ -153,6 +154,7 @@ try {
       "goldNum": 690,
       "headUrl": "https://prod-alicdn-community.kurobbs.com/headCode/RoleHeadTwentyone.png",
       "ifCompleteQuiz": 1,
+      "ipRegion": "北京",
       "isFollow": 0,
       "isLoginUser": 1,
       "isMute": 0,
