@@ -58,6 +58,8 @@ API 请求头大致相同, 具体请见 [参数总结](/PARAMS.md)
 - [[新] 鸣潮游戏角色基础数据](API/aki/roleBox/akiBox/baseData.md) 2025.05.25
 - [[新] 鸣潮游戏角色声骸收集数据](API/aki/roleBox/akiBox/calabashData.md) 2025.05.25
 - [[新] 鸣潮游戏角色探索数据](API/aki/roleBox/akiBox/exploreIndex.md) 2025.05.25
+- [鸣潮获取资源统计索引](API/aki/resource/period/list.md) 2025.05.29
+- [鸣潮获取账号资源统计](API/aki/resource.md) 2025.05.29
 
 ### [活动](/API/activity)
 
