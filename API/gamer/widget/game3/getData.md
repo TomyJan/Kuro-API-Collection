@@ -7,7 +7,9 @@
 ## 请求地址
 
 > ~~库街区内: https://event.kurobbs.com/gamer/widget/game3/getData~~ 又改回去了
+
 > 小组件: https://api.kurobbs.com/gamer/widget/game3/getData
+
 > 小组件: https://api.kurobbs.com/gamer/widget/game3/refresh 两接口地址的请求参数与返回内容相同，但refresh返回的数据更准确点
 
 ## 请求方式
