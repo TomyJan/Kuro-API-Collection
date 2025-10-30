@@ -7,9 +7,7 @@
 ## 请求地址
 
 > ~~库街区内: https://event.kurobbs.com/gamer/widget/game3/getData~~ 又改回去了
-
 > 小组件: https://api.kurobbs.com/gamer/widget/game3/getData
-
 > 小组件: https://api.kurobbs.com/gamer/widget/game3/refresh 两接口地址的请求参数与返回内容相同，但refresh返回的数据更准确点
 
 ## 请求方式
@@ -170,7 +168,6 @@ try {
 ### 响应
 
 ```json
-
 {
   "code": 200,
   "msg": "请求成功",
@@ -207,30 +204,6 @@ try {
       "cur": 100,
       "total": 100
     },
-    "battlePassData": [
-      {
-        "name": "电台等级",
-        "img": null,
-        "key": null,
-        "refreshTimeStamp": null,
-        "expireTimeStamp": null,
-        "value": null,
-        "status": 0,
-        "cur": 0,
-        "total": 0
-      },
-      {
-        "name": "本周经验",
-        "img": null,
-        "key": null,
-        "refreshTimeStamp": null,
-        "expireTimeStamp": null,
-        "value": null,
-        "status": 0,
-        "cur": 0,
-        "total": 0
-      }
-    ],
     "storeEnergyData": {
       "name": "结晶单质",
       "img": "https://web-static.kurobbs.com/gamerdata/widget/game3/storeEnergy.png",
@@ -290,7 +263,31 @@ try {
       "refreshTimeStamp": 0,
       "timePreDesc": null,
       "expireTimeStamp": 0
-    }
+    },
+    "battlePassData": [
+      {
+        "name": "电台等级",
+        "img": null,
+        "key": null,
+        "refreshTimeStamp": null,
+        "expireTimeStamp": null,
+        "value": null,
+        "status": 0,
+        "cur": 0,
+        "total": 0
+      },
+      {
+        "name": "本周经验",
+        "img": null,
+        "key": null,
+        "refreshTimeStamp": null,
+        "expireTimeStamp": null,
+        "value": null,
+        "status": 0,
+        "cur": 0,
+        "total": 0
+      }
+    ]
   },
   "success": true
 }
