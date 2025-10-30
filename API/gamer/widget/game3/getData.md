@@ -8,6 +8,7 @@
 
 > ~~库街区内: https://event.kurobbs.com/gamer/widget/game3/getData~~ 又改回去了
 > 小组件: https://api.kurobbs.com/gamer/widget/game3/getData
+> 小组件: https://api.kurobbs.com/gamer/widget/game3/refresh 两接口地址的请求参数与返回内容相同，但refresh返回的数据更准确点
 
 ## 请求方式
 
@@ -85,6 +86,11 @@ json, 两个渠道响应完全一致
 | roleName            | str      | 角色昵称                          | 首席                                                         |
 | energyData          | obj      | 结晶波片数据                      | 这几个对象结构一致                                           |
 | livenessData        | obj      | 每日活跃数据                      | 这几个对象结构一致                                           |
+| storeEnergyData     | obj      | 结晶单质                         | 这几个对象结构一致                                           |
+| towerData           | obj      | 逆境深塔·深境区                   | 这几个对象结构一致                                           |
+| slashTowerData      | obj      | 冥歌海墟·禁忌海域                  | 这几个对象结构一致                                           |
+| weeklyData          | obj      | 战歌重奏                          | 这几个对象结构一致                                           |
+| weeklyRougeData     | obj      | 千道门扉的异想                     | 这几个对象结构一致                                           |
 | battlePassData      | arr      | 其他经验数据                      | 这个数组对象和上面几个对象结构一致                           |
 | actionRecoverSwitch | bool     | 角色昵称                          | 首席                                                         |
 
@@ -197,6 +203,66 @@ try {
       "status": 0,
       "cur": 100,
       "total": 100
+    },
+    "storeEnergyData": {
+      "name": "结晶单质",
+      "img": "https://web-static.kurobbs.com/gamerdata/widget/game3/storeEnergy.png",
+      "key": null,
+      "value": null,
+      "status": 0,
+      "cur": 345,
+      "total": 480,
+      "refreshTimeStamp": 0,
+      "timePreDesc": null,
+      "expireTimeStamp": 0
+    },
+    "towerData": {
+      "name": "逆境深塔·深境区",
+      "img": "https://web-static.kurobbs.com/gamerdata/widget/game3/tower.png",
+      "key": null,
+      "value": null,
+      "status": 0,
+      "cur": 12,
+      "total": 36,
+      "refreshTimeStamp": 1762718400,
+      "timePreDesc": "深境区",
+      "expireTimeStamp": 0
+    },
+    "slashTowerData": {
+      "name": "冥歌海墟·禁忌海域",
+      "img": "https://web-static.kurobbs.com/gamerdata/widget/game3/slashTower.png",
+      "key": null,
+      "value": "奖励进度：暂无数据",
+      "status": 1,
+      "cur": 0,
+      "total": 0,
+      "refreshTimeStamp": 1761508800,
+      "timePreDesc": "再生海域",
+      "expireTimeStamp": 0
+    },
+    "weeklyData": {
+      "name": "战歌重奏",
+      "img": "https://web-static.kurobbs.com/gamerdata/widget/game3/weekly.png",
+      "key": null,
+      "value": null,
+      "status": 0,
+      "cur": 0,
+      "total": 3,
+      "refreshTimeStamp": 0,
+      "timePreDesc": null,
+      "expireTimeStamp": 0
+    },
+    "weeklyRougeData": {
+      "name": "千道门扉的异想",
+      "img": "https://web-static.kurobbs.com/gamerdata/widget/game3/weekly.png",
+      "key": null,
+      "value": null,
+      "status": 0,
+      "cur": 6000,
+      "total": 6000,
+      "refreshTimeStamp": 0,
+      "timePreDesc": null,
+      "expireTimeStamp": 0
     },
     "battlePassData": [
       {
